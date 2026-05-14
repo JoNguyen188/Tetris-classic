@@ -278,7 +278,7 @@ const nCtx    = nCanvas.getContext('2d');
 
 function resize() {
   const maxW = Math.min(window.innerWidth, 360);
-  CELL = Math.floor(maxW / COLS);
+  CELL = Math.floor(maxW / COLS) -2;
   canvas.width  = COLS * CELL;
   canvas.height = ROWS * CELL;
   document.getElementById('game-wrap').style.width = canvas.width + 'px';
